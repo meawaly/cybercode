@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>CyberCode</title>
+        <meta charset="utf-8">
+        <meta name="description"
+        content="Site da Cybercode">
+        <meta name="viewport"
+        content="width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="imagens/icone.png">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/animate.css">
+        
+    </head>
+    <body>
+        <header>
+        <a href="index.html" title="Página Inicial">
+            <img src="imagens/logo.png" alt="CyberCode" class="wow fadeIn">
+        </a>
+        <a href="javascript:mostrarmenu()" title="Menu" class="menu">
+       
+    <i class="fas fa-bars"></i>
+
+        </a>
+
+        <nav class="wow fadeIn">
+            <ul>
+                <li>
+                    <a href="index.html"
+                    title="Home" >Home</a>
+                </li>
+                <li>
+                    <a href="sobre.html"
+                    title="Sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+        
+        <main class="space">
+            
+            <div class="container">
+                <h1>Contato</h1>
+                
+                    <form name="form1" method="get" action="#">
+                        <label for="nome">Digite seu nome completo:</label>
+                        <input type="text" name="nome" id="nome" 
+                        placeholder="Nome Completo" maxlength="30" autocomplete="off" class="form">
+                        <br>
+                        <label for="idade">Digite sua idade:</label>
+                        <input type="number" name="idade" id="idade" max="120" min="0" required inputmode="numeric" class="form">
+                        <br>
+                        <label for="estado">Selecione um Estado Civil:</label>
+                        <select name="estado" id="estado" class="form" required>
+                            <option value="">Selecione</option>
+                            <option value="S">Solteiro(a)</option>
+                            <option value="E">Enrolado(a)</option>
+                            <option value="C">Casado(a)</option>
+                            <option value="T">Triste</option>
+                        </select>
+                        <br>
+            
+                        <label for="genero">Selecione o Gênero:</label> 
+                        
+                        <input type="radio" name="genero" id="masculino" value="M"> Masculino
+                        <input type="radio" name="genero" id="feminino" value="F"> Feminino
+                        <input type="radio" name="genero" id="naoInformar" value="N"> Não informar 
+                        <br>
+                        <label for="mensagem">Sua Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" class="form" required placeholder="Digite a sua mensagem" rows="5"></textarea> 
+                        <br>
+                       
+                        <button type="submit" class="botao">Enviar:</button>
+                    </form>
+                   
+			
+                <h1>Localização</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.693500250975!2d-52.38587048514842!3d-24.04187118444643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed75163e75231b%3A0x70dc249173bf873!2sAv.%20Comendador%20Norberto%20Marcondes%2C%201054%20-%20Centro%2C%20Campo%20Mour%C3%A3o%20-%20PR%2C%2087302-060!5e0!3m2!1spt-BR!2sbr!4v1634389235419!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </main>
+        <footer>
+            <p> Desenvolvido por Aline<br> Francisco Ferreira Albuquerque</p> <!--br quebra linha-->
+        <p> 
+            <a href="#" title="Facebook" class="social">
+               <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" title="Instagram" class="social">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" title="Twitter" class="social">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" title="Youtube" class="social">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </p>
+        </footer>
+    
+
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+
+        function mostrarmenu() {
+            document.querySelector("header nav").classList.toggle("show");
+        }
+        </script>
+
+    </body>
+</html>

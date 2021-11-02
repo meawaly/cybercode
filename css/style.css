@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    font-family: "Open Sans" , Tahoma, Arial;
+}
+
+header {
+    background-color: rgb(0, 0, 0, 0.8);
+    /*fundo de cor transparente vermelho, verde, azul, transparencia (0-1)*/
+    padding: 15px; /*margem interna*/
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+}
+
+.menu {
+    display: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    float: right;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 5px; 
+    margin: 10px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color:rgba(184, 98, 154, 0.8)
+}
+
+.banner {
+    width: 100%;
+    height: 500px; /*altura */
+    background-image:  url(../imagens/banner.jpg);
+    background-size: cover;
+    display: inline-block;
+    padding-top: 20%; /*margem somento no top*/
+    text-align: center;
+
+}
+
+.banner h2 {
+    color: rgb(173, 107, 159);
+    font-size: 2.5em;
+}
+
+.banner p {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+
+
+
+.botao {
+    background-color: rgb(173, 107, 159);
+    color: rgb(44, 29, 39);
+    border: 1px solid rgb(173, 107, 159);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .5s;
+
+}
+.botao:hover {
+        background-color: rgb(44, 29, 39);
+        color:#fff;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section h1 {
+    font-size: 2.5em;
+    color: rgb(173, 107, 159);
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+
+
+.container {
+    width: 960px;
+    margin: auto; /* centralizar */}
+    
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+}
+
+.grid .coluna {
+    text-align: center;
+    margin: 10px; /*espaço entre as colunas - imagens*/
+
+}
+
+#time {
+    background-image: url(../imagens/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img {
+    width: 100%;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.card .img {
+    border-radius: 5px 5px 0 0;
+}
+
+#blog .card {
+    box-shadow: 0 0 5px #333;
+}
+
+#blog p {
+    line-height: 25px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+.social {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(173, 107, 159);
+    color: rgb(173, 107, 159);
+    display: inline-block;
+    border-radius: 100%;
+    line-height: 30px;
+    margin: 15px;
+
+}
+
+.social:hover {
+    background-color: rgb(173, 107, 159);
+    color: #fff;
+}
+
+.space {
+    padding-top: 110px;
+}
+
+
+section h1, .space h1 {
+    font-size: 2,5em;
+    color: rgb(173, 107, 159);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+label {
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.form {
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.botao {
+    border: 0;
+    background-color: rgb(114, 64, 103);
+    border-radius: 3px;
+    padding: 5px;
+    color: #FFF;
+}
+
+.botao:hover {
+    background-color: rgb(209, 112, 185);
+}
+
+textarea {
+    resize: none;
+}
+
